@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Strait&family=Viaoda+Libre&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Strait&family=Stylish&family=Viaoda+Libre&display=swap');
+@import url(fonte/fontes.ttf);
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sofia&family=Strait&family=Stylish&family=Viaoda+Libre&display=swap');
+
+@font-face {
+    font-family: fontes;
+    src: url('fonte/fontes.ttf') format('truetype'),
+    /* adicione outros formatos, como .ttf e .otf, se necessário */
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Strait", sans-serif;
+    --fonte3: "Viaoda Libre", serif;
+    --fonte4: "Fredericka the Great", serif;
+    --fonte5: "Elegante", serif;
+    --fonte6: "Estreito", sans-serif;
+    --fonte7: "Viaoda Libre", serif;
+    --fonte8: "Fredericka, o Grande", serif;
+    --fonte9: "Sofia", cursiva;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(224, 111, 4);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte4);
+    font-size: 2.5vw;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header >p{
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte9);
+    font-size: 2.5vw;
+    
+}
+
+section > p{
+    padding-bottom: 1.5em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: inset 6px 5px 13px 0px rgba(0, 0, 0, 0.589);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 9px;
+    background-color: rgba(0, 0, 0, 0.849);
+    text-shadow: 1px 1px 0px rgb(92, 2, 2);
+    color: rgb(252, 252, 252);
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: var(--fonte2);
+}
